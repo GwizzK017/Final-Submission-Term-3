@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Gedeon Kazadi">
+   <meta name="studentnumber" content="21100471">
+   <meta name="subject" content="DV 100">
+   <title>cart</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!--JQ link-->
+   <script src="js/jquery-3.6.0.min.js"></script>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="index.html" class="logo">RTEX</a>
+
+
+   <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="trips.html">trips</a>
+      <a href="book.html">book</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+<div class="heading" style="background:url(Assets/woman-spiritual-peaceful-summer-beach-concept.jpg) no-repeat">
+   <h1>book now</h1>
+</div>
+
+<!-- booking section starts  -->
+
+<section class="booking">
+
+   <h1 class="heading-title">book your trip!</h1>
+
+   <form action="#" method="post" class="book-form">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>name :</span>
+            <input type="text" placeholder="enter your name" name="name">
+         </div>
+         <div class="inputBox">
+            <span>email :</span>
+            <input type="email" placeholder="enter your email" name="email">
+         </div>
+         <div class="inputBox">
+            <span>phone :</span>
+            <input type="number" placeholder="enter your number" name="phone">
+         </div>
+         <div class="inputBox">
+            <span>address :</span>
+            <input type="text" placeholder="enter your address" name="address">
+         </div>
+         <div class="inputBox">
+            <span>where to :</span>
+            <input type="text" placeholder="place you want to visit" name="location">
+         </div>
+         <div class="inputBox">
+            <span>how many :</span>
+            <input type="number" placeholder="number of guests" name="guests">
+         </div>
+         <div class="inputBox">
+            <span>arrivals :</span>
+            <input type="date" name="arrivals">
+         </div>
+         <div class="inputBox">
+            <span>leaving :</span>
+            <input type="date" name="leaving">
+         </div>
+      </div>
+
+      <input id="submit" type="submit" value="submit" class="btn" name="send">
+
+   </form>
+
+   <div id="summary" class="right">
+      <h1><center><u>Your Purchases</u></center></h1>
+              <hr/>
+          <center><div id="table">
+              <table>
+                  <tr>
+                      <th>Ticket Code</th>
+                      <th>Ticket Quantity</th>
+                      <th>Total Cost</th>
+                  </tr>
+                  <tr id="r1">
+                      <td>014-369</td>
+                      <td>R750</td>
+                      <td>2</td>
+                      <td><img id="remove" src="Assets/5598.jpg"></td>
+                  </tr>
+                  <tr id="r2">
+                      <td>014-369</td>
+                      <td>R750</td>
+                      <td>2</td>
+                      <td><img id="remove1" src="Assets/5598.jpg"></td>
+                  </tr>
+              </table>
+          </div></center>
+              <button id="purchase">Confirm</button><br/><br/>
+              <button id="r_a">Remove All</button>
+          </div>
+  </div>
+
+</section>
+
+<!-- booking section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>navigation links</h3>
+         <a href="index.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="trips.html"> <i class="fas fa-angle-right"></i> trips</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> book</a>
+      </div>
+
+      <div class="box">
+         <h3>about us</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask the crew</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms and conditions</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +27 11-836-9240 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +27 83-423-57029 </a>
+         <a href="https://login.yahoo.com/"> <i class="fas fa-envelope"></i> kaz.g@yahoo.com </a>
+         <a href="#"> <i class="fas fa-map"></i> cape town, south africa </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="https://www.facebook.com/login/"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="https://twitter.com/"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="https://www.linkedin.com/login"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+</section>
+
+
+<!-- footer section ends -->
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!--  js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
